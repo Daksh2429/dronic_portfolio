@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - DroniC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .timeline li {
+      margin-bottom: 10px;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .timeline li::before {
+      content: "•";
+      color: #007bff;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <a class="navbar-brand" href="index.html">
+    <img src="assets/images/IMG_2908.PNG" alt="DroniC Logo" style="height: 40px; margin-right: 10px;">
+    <span class="text-white fw-bold">DroniC</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dronic.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="bg-light py-4 fade-in text-center">
+  <div class="mb-2">
+    <img src="assets/images/om-icon.png" alt="Om Symbol" style="height: 40px; margin-right: 10px;">
+    <img src="assets/images/peacock-icon.jpg" alt="Peacock Feather" style="height: 40px;">
+  </div>
+  <p class="mb-1" style="font-family: 'Georgia', serif; font-size: 1.2rem;">
+    <strong>ॐ श्री गणेशाय नमः</strong>
+  </p>
+  <p style="font-family: 'Georgia', serif; font-size: 1.1rem;">
+    <strong>कृष्णाय वासुदेवाय हरये परमात्मने ।<br>
+    प्रणतः क्लेश नाशाय गोविंदाय नमो नमः ॥</strong>
+  </p>
+  <p class="text-muted mt-2" style="font-size: 0.95rem;">
+    With humble devotion to Lord Ganesha and Lord Krishna — the guiding forces in my life and creativity.
+  </p>
+</section>
+
+
+
+<!-- About Content -->
+<section class="container my-5 ">
+  <div class="row align-items-center">
+    <div class="col-md-5 mb-4 mb-md-0 text-center">
+      <img src="assets/images/Dakshkumar Patel.DNG" class="img-fluid rounded shadow fade-in" alt="Your Photo" style="max-height: 400px;">
+    </div>
+    <div class="col-md-7 fade-in">
+      <h2 class="fw-bold mb-3">About Me</h2>
+      <p>Hello! I'm <strong>Daksh Patel</strong>, a tech-savvy creative and the founder of <strong>DroniC</strong> — a platform where my love for technology meets the art of aerial storytelling.</p>
+      <p>I specialize in drone photography, video editing, and web development. I blend visuals and code to bring ideas to life — from cinematic drone shots to portfolio websites like this one.</p>
+      <p>When I’m not flying drones or editing videos, I’m learning new tech stacks and working toward becoming a full-stack developer.</p>
+      <a href="dronic.html" class="btn btn-primary mt-3">See My Drone Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mission -->
+<section class="container my-5  fade-in">
+  <h3 class="text-center mb-4">My Mission</h3>
+  <p class="text-center">To turn imagination into visual reality — whether it's through a drone soaring above a mountain or a website that tells a story. DroniC is my way of combining tech, creativity, and curiosity to create something unforgettable.</p>
+</section>
+
+<!-- Skills -->
+<section class="container my-5 fade-in">
+  <h3 class="text-center mb-4">What I Work With</h3>
+  <div class="row text-center">
+    <div class="col-md-3 col-6 mb-3">
+      <i class="bi bi-camera-video" style="font-size: 2rem;"></i><br> DJI Drones
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <i class="bi bi-laptop" style="font-size: 2rem;"></i><br> HTML / CSS / JS
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <i class="bi bi-play-btn" style="font-size: 2rem;"></i><br> Premiere Pro
+    </div>
+    <div class="col-md-3 col-6 mb-3">
+      <i class="bi bi-cloud" style="font-size: 2rem;"></i><br> AWS & Git
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="container my-5 fade-in">
+  <h3 class="text-center mb-4">My Journey</h3>
+  <ul class="timeline list-unstyled">
+    <li><strong>2022:</strong> First drone flight — the spark of DroniC.</li>
+    <li><strong>2023:</strong> Started building websites & video editing.</li>
+    <li><strong>2024:</strong> Combined tech + creativity into a brand.</li>
+    <li><strong>2025:</strong> Launching portfolio + growing DroniC!</li>
+  </ul>
+</section>
+
+<!-- Certifications -->
+<section class="container my-5 fade-in">
+  <h3 class="text-center mb-4">Certifications</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <i class="bi bi-patch-check-fill text-success me-2"></i>
+          CompTIA A+ (in progress)
+        </li>
+        <li class="list-group-item">
+          <i class="bi bi-patch-check-fill text-success me-2"></i>
+          The complete ITIL 4 fundamental course on udemy
+        </li>
+        <li class="list-group-item">
+          <i class="bi bi-patch-check-fill text-success me-2"></i>
+          Microsoft PL-900: Power Platform Fundamentals
+        </li>
+        <li class="list-group-item">
+          <i class="bi bi-patch-check-fill text-success me-2"></i>
+         The Complete Full-Stack Web Development Bootcamp 
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Fun Fact -->
+<section class="bg-light py-5 fade-in">
+  <div class="container text-center">
+    <h4 class="mb-3">Fun Fact</h4>
+    <p>I once flew a drone over a frozen lake just to catch sunrise reflections — and yes, it was totally worth it.</p>
+    <blockquote class="blockquote mt-4">
+      <p>"Creativity is intelligence having fun." – Albert Einstein</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="text-center my-5 fade-in">
+  <h4>Want to collaborate or just say hi?</h4>
+  <a href="contact.html" class="btn btn-outline-primary mt-2">Let’s Connect</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-1">&copy; 2025 DroniC by Daksh Patel. All rights reserved.</p>
+  <a href="https://www.instagram.com/dakshpatel_2412" target="_blank" class="text-white text-decoration-none">
+    <i class="bi bi-instagram" style="font-size: 1.5rem;"></i> Follow me on Instagram
+  </a>
+</footer>
+
+<!-- Bootstrap JS Bundle (for navbar toggle functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
