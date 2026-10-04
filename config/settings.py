@@ -11,19 +11,22 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os     #Gives Python access to operating-system features, including environment variables.
+from dotenv import load_dotenv #Imports the function that reads variables from .env.
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")    #load_dotenv()	Reads environment variables from a .env file; BASE_DIR	Represents the root directory of your Django project; / ".env"	Constructs the path to your .env file.
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!f*n8fm5%$k8ncw273b4x7wmvgwjx%!@uylme9mt9)!hda2=#7'
+SECRET_KEY = os.environ["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = []
 
