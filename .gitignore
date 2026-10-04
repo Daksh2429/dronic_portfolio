@@ -1,1 +1,14 @@
 .venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local development database
+db.sqlite3
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
